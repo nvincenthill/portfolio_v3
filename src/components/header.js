@@ -1,42 +1,28 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import Footer from "./Footer"
+import avatar from "../assets/images/avatar.jpg"
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+class Header extends React.Component {
+  render() {
+    return (
+      <header id="header">
+        <div className="inner">
+          <a href="#" className="image avatar">
+            <img src={avatar} alt="" />
+          </a>
+          <h1>
+            I'm an engineer
+            <br />
+            designing responsive
+            <br />
+            mobile-first web applications
+          </h1>
+        </div>
+        <Footer />
+      </header>
+    )
+  }
 }
 
 export default Header
