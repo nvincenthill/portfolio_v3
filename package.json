@@ -13,7 +13,8 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
-    "react-images": "^0.5.19"
+    "react-images": "^0.5.19",
+    "react-particles-js": "^2.5.1"
   },
   "keywords": [
     "gatsby"
