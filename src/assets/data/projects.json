@@ -1,0 +1,172 @@
+[
+  {
+    "name": "The Meal Panda",
+    "imageSource": "mealpanda_showcase.png",
+    "description": "Menu planner & grocery list generator",
+    "url": "https://mealpanda.herokuapp.com/",
+    "github": "https://github.com/nvincenthill/mealpanda",
+    "iconAnimation": "tada",
+    "frontEndStack": [
+      "html5-plain",
+      "bootstrap-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original"
+    ],
+    "frontEndStackNames": [
+      "HTML5",
+      "React Bootstrap",
+      "CSS3",
+      "JavaScript",
+      "React.js"
+    ],
+    "backEndStack": ["nodejs-plain", "firebase"],
+    "backEndStackNames": ["Node.js"],
+    "tools": [
+      "visualstudio-plain",
+      "photoshop-plain",
+      "trello-plain",
+      "webpack-plain",
+      "heroku-plain",
+      "git-plain"
+    ],
+    "toolsNames": ["VSCode", "Photoshop", "Trello", "Webpack", "Heroku", "Git"]
+  },
+  {
+    "name": "Nick's Bloomberg Terminal",
+    "imageSource": "shroomberg_showcase.png",
+    "description": "A Yahoo finance/Bloomberg knockoff named 'Shroomberg'",
+    "url": "https://shroomberg.herokuapp.com/",
+    "github": "https://github.com/nvincenthill/stock-quote-app",
+    "iconAnimation": "bounce",
+    "frontEndStack": [
+      "html5-plain",
+      "bootstrap-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original"
+    ],
+    "frontEndStackNames": [
+      "HTML5",
+      "React Bootstrap",
+      "CSS3",
+      "JavaScript",
+      "React.js"
+    ],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "webpack-plain",
+      "heroku-plain",
+      "git-plain"
+    ],
+    "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
+  },
+  {
+    "name": "Scrabblr",
+    "imageSource": "scrabblr_showcase.png",
+    "description": "A tile-based word game for the whole family",
+    "url": "https://scrabblr.herokuapp.com/",
+    "github": "https://github.com/nvincenthill/scrabblr",
+    "iconAnimation": "rubberBand",
+    "frontEndStack": [
+      "html5-plain",
+      "bootstrap-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original"
+    ],
+    "frontEndStackNames": [
+      "HTML5",
+      "React Bootstrap",
+      "CSS3",
+      "JavaScript",
+      "React.js"
+    ],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "webpack-plain",
+      "heroku-plain",
+      "git-plain"
+    ],
+    "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
+  },
+  {
+    "name": "AirFEC",
+    "imageSource": "fec_showcase.png",
+    "description": "MERN-stack app based on a popular online marketplace for people to rent short-term lodging",
+    "url": "https://github.com/airfec/airFEC-Nicholas-Vincent-Hill",
+    "github": "https://github.com/airfec/airFEC-Nicholas-Vincent-Hill",
+    "iconAnimation": "rubberBand",
+    "frontEndStack": [
+      "html5-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original"
+    ],
+    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js"],
+    "backEndStack": ["nodejs-plain", "express-original", "mongodb-plain"],
+    "backEndStackNames": ["Node.js", "Express", "MongoDB"],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "babel-plain",
+      "webpack-plain",
+      "grunt-line",
+      "docker-plain",
+      "amazonwebservices-original",
+      "git-plain"
+    ],
+    "toolsNames": [
+      "VSCode",
+      "Trello",
+      "Babel",
+      "Webpack",
+      "Grunt",
+      "Docker",
+      "AWS EC2",
+      "Git"
+    ]
+  },
+  {
+    "name": "AirSDC",
+    "imageSource": "sdc_showcase.png",
+    "description": "System-design case study load-testing server/database choices, optimizations, node-clustering, and caching",
+    "url": "https://github.com/airSDC/Nicholas-Vincent-Hill-Photo-Carousel-Service",
+    "github": "https://github.com/airSDC/Nicholas-Vincent-Hill-Photo-Carousel-Service",
+    "iconAnimation": "tada",
+    "frontEndStack": [
+      "html5-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original"
+    ],
+    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js"],
+    "backEndStack": [
+      "nodejs-plain",
+      "express-original",
+      "postgresql-plain",
+      "redis-plain"
+    ],
+    "backEndStackNames": ["Node.js", "Express", "PostgreSQL", "Redis"],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "babel-plain",
+      "webpack-plain",
+      "docker-plain",
+      "amazonwebservices-original",
+      "git-plain"
+    ],
+    "toolsNames": [
+      "VSCode",
+      "Trello",
+      "Babel",
+      "Webpack",
+      "Docker",
+      "AWS EC2",
+      "Git"
+    ]
+  }
+]
