@@ -18,12 +18,12 @@ $size: (
 // Font.
 $font: (
   family: (
-    "Source Sans Pro",
+    'Helvetica',
     Helvetica,
     sans-serif,
   ),
   family-fixed: (
-    "Courier New",
+    'Courier New',
     monospace,
   ),
   weight: 400,
@@ -41,7 +41,7 @@ $palette: (
   border2: #dfdfdf,
   border2-bg: #e7e7e7,
   accent1: (
-    bg: #49bf9d,
+    bg: #eee,
     fg: mix(#49bf9d, #ffffff, 25%),
     fg-bold: #ffffff,
     fg-light: mix(#49bf9d, #ffffff, 40%),
