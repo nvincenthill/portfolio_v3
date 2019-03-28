@@ -1,20 +1,28 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "portfolio_v3",
+  "description": "a portfolio site for Nicholas Vincent-Hill",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Nicholas Vincent-Hill",
   "dependencies": {
     "gatsby": "^2.2.9",
+    "gatsby-image": "^2.0.35",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-s3": "^0.2.5",
     "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "grunt": "^1.0.4",
+    "grunt-aws-s3": "^2.0.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19",
-    "react-particles-js": "^2.5.1"
+    "react-particles-js": "^2.5.1",
+    "smooth-scroll": "^16.0.3"
   },
   "keywords": [
     "gatsby"
@@ -22,12 +30,23 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby-plugin-s3 deploy",
     "develop": "gatsby develop",
+    "ship": "gatsby build && npm run deploy",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "grunt": "^1.0.3",
+    "grunt-aws-s3": "^2.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0"
   },
   "repository": {
     "type": "git",
