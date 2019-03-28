@@ -73,3 +73,7 @@ aws-keys.json
 
 #vscode
 .vscode/
+
+#env
+.env.production
+.env.development
