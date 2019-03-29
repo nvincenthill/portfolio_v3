@@ -249,7 +249,7 @@ pre {
 
 .poem-hightlight {
   font-weight: bold;
-  color: #222;
+  color: #eee;
 }
 
 /* Section/Article */
@@ -1033,14 +1033,12 @@ input[type='button'],
   }
 
   .image.avatar {
-    width: 10em;
+    width: 10rem;
     margin-left: -5rem;
     position: absolute;
     top: 10%;
     left: 50%;
     z-index: 2;
-    // opacity: 0.3;
-    // mix-blend-mode: lighten;
   }
 
   .bold {
