@@ -25,7 +25,7 @@ class Home extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Image a world
+                Imagine a world
                 <br />
                 covered in stickers of your own face.
               </h2>
