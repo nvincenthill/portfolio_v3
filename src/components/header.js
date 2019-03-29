@@ -1,4 +1,5 @@
 import React from 'react';
+import posed from 'react-pose';
 
 import Footer from './Footer';
 import NavBar from './NavBar';
@@ -8,6 +9,12 @@ import particleConfig from '../assets/data/particlesjs-config.json';
 import particleConfigSpace from '../assets/data/particlesjs-config-space.json';
 
 import { Link } from 'gatsby';
+
+const Logo = posed.img({
+  pressable: true,
+  init: { scale: 1, opacity: 1 },
+  press: { scale: 0.8, opacity: 0.8 },
+});
 
 class Header extends React.Component {
   constructor(props) {
@@ -21,7 +28,7 @@ class Header extends React.Component {
           <div className="outer-particle-container">
             <div className="inner-particle-container">
               <Link to="/">
-                <img className="image avatar" src={avatar} alt="" />
+                <Logo className="image avatar" src={avatar} alt="" />
               </Link>
 
               {typeof window !== 'undefined' && (
