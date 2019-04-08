@@ -25,9 +25,9 @@ class Home extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Imagine a world
+                Hi, I'm Nick!
                 <br />
-                covered in stickers of your own face.
+                I'm a software engineering instructor at Galvanize.
               </h2>
             </header>
             <div className="poem">
