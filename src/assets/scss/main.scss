@@ -46,6 +46,12 @@
   )
 );
 
+@font-face {
+  font-family: 'Helvetica';
+  font-display: auto;
+  src: local('Helvetica') url(../fonts/HelveticaNeue-Light.woff) format('woff2');
+}
+
 $size-header-width: 35%;
 $size-header-pad: 4em;
 
