@@ -9,9 +9,17 @@ module.exports = {
     title: 'Nicholas Vincent-Hill',
     description: 'A simple portfolio site built with Gatsby',
     author: 'Nicholas Vincent-Hill',
+    siteUrl: 'https://www.nickvh.tech',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.nickvh.tech',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
