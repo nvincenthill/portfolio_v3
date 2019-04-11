@@ -3,7 +3,7 @@ import posed from 'react-pose';
 
 import Footer from './Footer';
 import NavBar from './NavBar';
-import avatar from '../assets/images/avatar.jpg';
+import avatar from '../assets/images/avatar_black.jpg';
 import Particles from 'react-particles-js';
 import particleConfig from '../assets/data/particlesjs-config.json';
 import particleConfigSpace from '../assets/data/particlesjs-config-space.json';
