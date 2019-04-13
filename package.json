@@ -37,7 +37,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby-plugin-s3 deploy",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop --https",
     "ship": "gatsby build && npm run deploy",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
