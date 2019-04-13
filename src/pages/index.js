@@ -24,13 +24,13 @@ class Home extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>
-                Hi, I'm Nick!
-                <br />
-                I'm a software engineering instructor at Galvanize.
-              </h2>
+              <h2>Hi, I'm Nick!</h2>
+              <h3>
+                I'm a software engineering instructor @ Hack Reactor at
+                Galvanize.
+              </h3>
             </header>
-            <div className="poem">
+            {/* <div className="poem">
               <p>I met a traveller from an antique land,</p>
               <p>Who said—“Two vast and trunkless legs of stone</p>
               <p>Stand in the desert. . . . Near them, on the sand,</p>
@@ -53,7 +53,7 @@ class Home extends React.Component {
               <p>
                 <strong>Percy B. Shelley</strong>
               </p>
-            </div>
+            </div> */}
           </section>
         </div>
       </Layout>
