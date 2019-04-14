@@ -1,5 +1,10 @@
 [
   {
+    "title": "How to build and deploy a beautiful PWA with AWS S3, Route53, and CloudFront ",
+    "description": "This is a step-by-step guide to creating a responsive static billboard/portfolio site, deploying it to the web with AWS, and serving it securely with HTTPS",
+    "url": "https://hackernoon.com/how-to-build-and-deploy-a-beautiful-personal-portfolio-site-with-aws-s3-route53-and-cloudfront-af125ccbb1c2"
+  },
+  {
     "title": "Scrabblr — A React game with react-dnd and react-flip-move",
     "description": "A high level overview of my implementation of a puzzle/word game built entirely in React",
     "url": "https://hackernoon.com/scrabblr-a-react-game-with-react-dnd-and-react-flip-move-40cfaac786e2"

@@ -33,6 +33,67 @@
     "toolsNames": ["VSCode", "Photoshop", "Trello", "Webpack", "Heroku", "Git"]
   },
   {
+    "name": "AirFEC",
+    "imageSource": "fec_showcase.png",
+    "description": "MERN-stack microservice-oriented component based on a popular online marketplace for people to rent short-term lodging",
+    "url": "https://github.com/airfec/airFEC-Nicholas-Vincent-Hill",
+    "github": "https://github.com/airfec/airFEC-Nicholas-Vincent-Hill",
+    "iconAnimation": "rubberBand",
+    "frontEndStack": [
+      "html5-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original"
+    ],
+    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js"],
+    "backEndStack": ["nodejs-plain", "express-original", "mongodb-plain"],
+    "backEndStackNames": ["Node.js", "Express", "MongoDB"],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "babel-plain",
+      "webpack-plain",
+      "grunt-line",
+      "docker-plain",
+      "amazonwebservices-original",
+      "git-plain"
+    ],
+    "toolsNames": [
+      "VSCode",
+      "Trello",
+      "Babel",
+      "Webpack",
+      "Grunt",
+      "Docker",
+      "AWS EC2",
+      "Git"
+    ]
+  },
+  {
+    "name": "dotmail.tech",
+    "imageSource": "empty_showcase.png",
+    "description": "A FERN-stack email bot to programmatically create, template, and send emails",
+    "url": "http://dotmail.tech",
+    "github": "https://github.com/nvincenthill/dotmail",
+    "iconAnimation": "rubberBand",
+    "frontEndStack": [
+      "html5-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original",
+      "redux-plain"
+    ],
+    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "webpack-plain",
+      "heroku-plain",
+      "git-plain"
+    ],
+    "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
+  },
+  {
     "name": "Nick's Bloomberg Terminal",
     "imageSource": "shroomberg_showcase.png",
     "description": "A Yahoo finance/Bloomberg knockoff named 'Shroomberg'",
@@ -93,43 +154,6 @@
     "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
   },
   {
-    "name": "AirFEC",
-    "imageSource": "fec_showcase.png",
-    "description": "MERN-stack app based on a popular online marketplace for people to rent short-term lodging",
-    "url": "https://github.com/airfec/airFEC-Nicholas-Vincent-Hill",
-    "github": "https://github.com/airfec/airFEC-Nicholas-Vincent-Hill",
-    "iconAnimation": "rubberBand",
-    "frontEndStack": [
-      "html5-plain",
-      "css3-plain",
-      "javascript-plain",
-      "react-original"
-    ],
-    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js"],
-    "backEndStack": ["nodejs-plain", "express-original", "mongodb-plain"],
-    "backEndStackNames": ["Node.js", "Express", "MongoDB"],
-    "tools": [
-      "visualstudio-plain",
-      "trello-plain",
-      "babel-plain",
-      "webpack-plain",
-      "grunt-line",
-      "docker-plain",
-      "amazonwebservices-original",
-      "git-plain"
-    ],
-    "toolsNames": [
-      "VSCode",
-      "Trello",
-      "Babel",
-      "Webpack",
-      "Grunt",
-      "Docker",
-      "AWS EC2",
-      "Git"
-    ]
-  },
-  {
     "name": "AirSDC",
     "imageSource": "sdc_showcase.png",
     "description": "System-design case study load-testing server/database choices, optimizations, node-clustering, and caching",
@@ -168,5 +192,29 @@
       "AWS EC2",
       "Git"
     ]
+  },
+  {
+    "name": "nickvh.tech",
+    "imageSource": "empty_showcase.png",
+    "description": "A personal portfolio site made with Gatsby.js",
+    "url": "https://nickvh.tech",
+    "github": "https://github.com/nvincenthill/portfolio_v3",
+    "iconAnimation": "rubberBand",
+    "frontEndStack": [
+      "html5-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original",
+      "redux-plain"
+    ],
+    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "webpack-plain",
+      "heroku-plain",
+      "git-plain"
+    ],
+    "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
   }
 ]
