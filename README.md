@@ -4,7 +4,7 @@ This is a Gatsby.js PWA portfolio site for Nicholas Vincent-Hill.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. I wrote a guide to building a site like this [here](https://hackernoon.com/how-to-build-and-deploy-a-beautiful-personal-portfolio-site-with-aws-s3-route53-and-cloudfront-af125ccbb1c2).
 
 ### Prerequisites
 
