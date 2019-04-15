@@ -27,8 +27,8 @@ class AboutPage extends React.Component {
               <h2>About me</h2>
             </header>
             <p>
-              I'm a full-stack software engineer who enjoys building scalable,
-              responsive, mobile-first web applications.
+              I'm a software engineering instructor who enjoys building
+              scalable, responsive, mobile-first web applications.
             </p>
             <p>
               In a prior life as a trader, I hedged interest rate risk for
