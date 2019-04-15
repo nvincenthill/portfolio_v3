@@ -26,7 +26,7 @@ class ArticlesPage extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>Here are some things I've written</h2>
+              <h2>Here are some articles I've written</h2>
             </header>
             {articles.map(article => {
               return <Article key={article.title} article={article} />;
