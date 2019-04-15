@@ -97,7 +97,7 @@
     "name": "Nick's Bloomberg Terminal",
     "imageSource": "shroomberg_showcase.png",
     "description": "A Yahoo finance/Bloomberg knockoff named 'Shroomberg'",
-    "url": "https://shroomberg.herokuapp.com/",
+    "url": "https://gallant-mcclintock-f7f4bb.netlify.com/",
     "github": "https://github.com/nvincenthill/stock-quote-app",
     "iconAnimation": "bounce",
     "frontEndStack": [
