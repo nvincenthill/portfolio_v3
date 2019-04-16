@@ -13,8 +13,7 @@ class ArticlesPage extends React.Component {
 
   render() {
     const siteTitle = 'Articles';
-    const siteDescription =
-      "A collection of Nicholas Vincent-Hill's written work";
+    const siteDescription = "A collection of Nicholas Vincent-Hill's written work";
 
     return (
       <Layout>
@@ -26,11 +25,11 @@ class ArticlesPage extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>Here are some articles I've written</h2>
+              <h2>Here are some articles I&apos;ve written</h2>
             </header>
-            {articles.map(article => {
-              return <Article key={article.title} article={article} />;
-            })}
+            {articles.map(article => (
+              <Article key={article.title} article={article} />
+            ))}
           </section>
         </div>
       </Layout>
