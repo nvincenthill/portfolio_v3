@@ -29,9 +29,7 @@ class Home extends React.Component {
             </header>
           </section>
         </div>
-        <div id="splash-graphic">
-          <PhysicsEngine />
-        </div>
+        <PhysicsEngine />
       </Layout>
     );
   }
