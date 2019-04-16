@@ -1,5 +1,29 @@
 [
   {
+    "name": "nickvh.tech",
+    "imageSource": "empty_showcase.png",
+    "description": "A personal portfolio site made with Gatsby.js",
+    "url": "https://nickvh.tech",
+    "github": "https://github.com/nvincenthill/portfolio_v3",
+    "iconAnimation": "rubberBand",
+    "frontEndStack": [
+      "html5-plain",
+      "css3-plain",
+      "javascript-plain",
+      "react-original",
+      "redux-plain"
+    ],
+    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"],
+    "tools": [
+      "visualstudio-plain",
+      "trello-plain",
+      "webpack-plain",
+      "heroku-plain",
+      "git-plain"
+    ],
+    "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
+  },
+  {
     "name": "The Meal Panda",
     "imageSource": "mealpanda_showcase.png",
     "description": "Menu planner & grocery list generator",
@@ -192,29 +216,5 @@
       "AWS EC2",
       "Git"
     ]
-  },
-  {
-    "name": "nickvh.tech",
-    "imageSource": "empty_showcase.png",
-    "description": "A personal portfolio site made with Gatsby.js",
-    "url": "https://nickvh.tech",
-    "github": "https://github.com/nvincenthill/portfolio_v3",
-    "iconAnimation": "rubberBand",
-    "frontEndStack": [
-      "html5-plain",
-      "css3-plain",
-      "javascript-plain",
-      "react-original",
-      "redux-plain"
-    ],
-    "frontEndStackNames": ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"],
-    "tools": [
-      "visualstudio-plain",
-      "trello-plain",
-      "webpack-plain",
-      "heroku-plain",
-      "git-plain"
-    ],
-    "toolsNames": ["VSCode", "Trello", "Webpack", "Heroku", "Git"]
   }
 ]
