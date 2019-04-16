@@ -5,16 +5,42 @@ class PhysicsEngine extends PureComponent {
   constructor(props) {
     super(props);
     this.myCanvas = React.createRef();
-    this.createEngine = this.createEngine.bind(this);
+    this.container = React.createRef();
+
+    this.state = {
+      width: 0,
+      height: 0,
+    };
+
+    this.createSimulation = this.createSimulation.bind(this);
   }
 
   componentDidMount() {
-    this.createEngine();
-    console.log(this.myCanvas);
+    const newWidth = this.container.current.clientWidth;
+    const newHeight = this.container.current.clientHeight;
+    this.createSimulation(newWidth, newHeight);
+    window.addEventListener('resize', this.updateDimensions.bind(this));
   }
 
-  createEngine() {
-    // module aliases
+  componentWillUpdate() {
+    const { render, width, height } = this.state;
+    if (render) {
+      this.myCanvas.current.width = width;
+      this.myCanvas.current.height = height;
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions.bind(this));
+  }
+
+  updateDimensions() {
+    const newWidth = this.container.current.clientWidth;
+    const newHeight = this.container.current.clientHeight;
+    this.setState({ width: newWidth, height: newHeight });
+  }
+
+  createSimulation(containerWidth, containerHeight) {
     const {
       Engine,
       Bodies,
@@ -33,8 +59,8 @@ class PhysicsEngine extends PureComponent {
     const { world } = engine;
 
     // responsively design canvas
-    const width = typeof window !== 'undefined' ? window.innerWidth * 0.6 : 300;
-    const height = typeof window !== 'undefined' ? window.innerHeight * 0.6 : 300;
+    const width = typeof window !== 'undefined' ? containerWidth : 300;
+    const height = typeof window !== 'undefined' ? containerHeight : 300;
 
     // create a renderer
     const render = Render.create({
@@ -47,6 +73,8 @@ class PhysicsEngine extends PureComponent {
       },
       engine,
     });
+
+    this.setState({ render });
 
     // run the renderer
     Render.run(render);
@@ -61,7 +89,7 @@ class PhysicsEngine extends PureComponent {
     // add bodies
     const group = Body.nextGroup(true);
 
-    const bridge = Composites.stack(160, 290, 15, 1, 0, 0, (x, y) => Bodies.rectangle(x - 20, y, 53, 20, {
+    const bridge = Composites.stack(160, 390, 15, 1, 0, 0, (x, y) => Bodies.rectangle(x - 20, y, 53, 20, {
       collisionFilter: { group },
       chamfer: 5,
       density: 0.005,
@@ -144,13 +172,19 @@ class PhysicsEngine extends PureComponent {
 
     // fit the render viewport to the scene
     Render.lookAt(render, {
-      min: { x: 0, y: 0 },
-      max: { x: 800, y: 800 },
+      min: { x: 0, y: 100 },
+      max: { x: 800, y: 900 },
     });
+
+    Render.setPixelRatio(render, 'auto');
   }
 
   render() {
-    return <div ref={this.myCanvas} />;
+    return (
+      <div id="simulation-container" ref={this.container}>
+        <div ref={this.myCanvas} />
+      </div>
+    );
   }
 }
 
