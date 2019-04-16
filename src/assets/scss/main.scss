@@ -52,7 +52,7 @@
   src: local('Helvetica') url(../fonts/HelveticaNeue-Light.woff) format('woff2');
 }
 
-$size-header-width: 35%;
+$size-header-width: 35vw;
 $size-header-pad: 4em;
 
 /* Basic */
@@ -262,11 +262,11 @@ pre {
   display: none;
 }
 
-/* Splash */
+/* Simulation */
 
-#splash-graphic {
+#simulation-container {
   margin-left: $size-header-width;
-  max-height: 60vh;
+  min-height: 50vh;
   background: _palette(accent2, bg);
   display: flex;
   justify-content: center;
@@ -1115,8 +1115,8 @@ input[type='button'],
 #main {
   text-align: center;
   margin-left: $size-header-width;
+  min-height: 50vh;
   max-width: 50em + $size-header-pad;
-  max-height: 40vh;
   padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
     $size-header-pad;
   width: calc(100% - #{$size-header-width});
@@ -1332,7 +1332,7 @@ body.is-touch {
 /* Large */
 
 @include breakpoint(large) {
-  $size-header-width: 30%;
+  $size-header-width: 30vw;
   $size-header-pad: 3em;
 
   /* Header */
@@ -1374,7 +1374,7 @@ body.is-touch {
     width: calc(100% - #{$size-header-width});
   }
 
-  #splash-graphic {
+  #simulation-container {
     margin-left: $size-header-width;
   }
 }
@@ -1468,7 +1468,7 @@ body.is-touch {
     width: 100%;
   }
 
-  #splash-graphic {
+  #simulation-container {
     margin: 0;
   }
 }
