@@ -258,6 +258,20 @@ pre {
   color: _palette(dark);
 }
 
+.typed-cursor {
+  display: none;
+}
+
+/* Splash */
+
+#splash-graphic {
+  margin-left: $size-header-width;
+  max-height: 60vh;
+  background: _palette(accent2, bg);
+  display: flex;
+  justify-content: center;
+}
+
 /* Section/Article */
 
 section,
@@ -299,6 +313,12 @@ header {
       font-size: 2em;
     }
   }
+}
+
+#header-name {
+  font-weight: bold;
+  color: _palette(bg) !important;
+  display: inline-block;
 }
 
 /* Form */
@@ -1093,8 +1113,10 @@ input[type='button'],
 /* Main */
 
 #main {
+  text-align: center;
   margin-left: $size-header-width;
   max-width: 50em + $size-header-pad;
+  max-height: 40vh;
   padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
     $size-header-pad;
   width: calc(100% - #{$size-header-width});
@@ -1351,6 +1373,10 @@ body.is-touch {
       $size-header-pad;
     width: calc(100% - #{$size-header-width});
   }
+
+  #splash-graphic {
+    margin-left: $size-header-width;
+  }
 }
 
 /* Medium */
@@ -1440,6 +1466,10 @@ body.is-touch {
     margin: 0;
     padding: ($size-header-pad * 1.5) $size-header-pad;
     width: 100%;
+  }
+
+  #splash-graphic {
+    margin: 0;
   }
 }
 
