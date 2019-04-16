@@ -22,12 +22,14 @@
     "grunt-aws-s3": "^2.0.0",
     "gsap": "^2.1.2",
     "node-sass": "^4.11.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19",
     "react-particles-js": "^2.5.1",
     "react-pose": "^4.0.8",
+    "react-typed": "^1.1.2",
     "smooth-scroll": "^16.0.3"
   },
   "keywords": [
@@ -47,6 +49,7 @@
     "grunt": "^1.0.3",
     "grunt-aws-s3": "^2.0.0",
     "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.13.0",
