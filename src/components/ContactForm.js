@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
       referrer: 'no-referrer',
       body: JSON.stringify({ name, email, content: message }),
     })
-      .then(response => {
+      .then((response) => {
         response.json();
       })
       .then(() => self.setState({ isFormDisplayed: false }))
@@ -57,9 +57,7 @@ class ContactForm extends React.Component {
       </li>
     );
     const actions = (
-      <ul className="actions form-submit-button">
-        {isFormDisplayed ? submitButton : null}
-      </ul>
+      <ul className="actions form-submit-button">{isFormDisplayed ? submitButton : null}</ul>
     );
     const form = (
       <form method="post" action="#" onSubmit={this.handleSubmit}>
@@ -96,15 +94,9 @@ class ContactForm extends React.Component {
       </form>
     );
 
-    const thankYouNote = (
-      <div>Thank you! I'll get back to you as soon as possible!</div>
-    );
+    const thankYouNote = <div>Thank you! I'll get back to you as soon as possible!</div>;
 
-    return (
-      <div className="8u 12u$(small)">
-        {isFormDisplayed ? form : thankYouNote}
-      </div>
-    );
+    return <div className="8u 12u$(small)">{isFormDisplayed ? form : thankYouNote}</div>;
   }
 }
 
