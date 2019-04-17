@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import Matter from 'matter-js';
 
+import avatar from '../assets/images/headshot.png';
+
 class PhysicsEngine extends PureComponent {
   constructor(props) {
     super(props);
@@ -18,7 +20,9 @@ class PhysicsEngine extends PureComponent {
   componentDidMount() {
     const newWidth = this.container.current.clientWidth;
     const newHeight = this.container.current.clientHeight;
-    this.createSimulation(newWidth, newHeight);
+    setTimeout(() => {
+      this.createSimulation(newWidth, newHeight);
+    }, 750);
     window.addEventListener('resize', this.updateDimensions.bind(this));
   }
 
@@ -67,7 +71,7 @@ class PhysicsEngine extends PureComponent {
       element: this.myCanvas.current,
       options: {
         width,
-        height,
+        height: height * 2,
         wireframes: false,
         background: 'transparent',
       },
@@ -89,9 +93,8 @@ class PhysicsEngine extends PureComponent {
     // add bodies
     const group = Body.nextGroup(true);
 
-    const bridge = Composites.stack(160, 390, 15, 1, 0, 0, (x, y) => Bodies.rectangle(x - 20, y, 53, 20, {
+    const bridge = Composites.stack(160, 1390, 15, 1, 0, 0, (x, y) => Bodies.rectangle(x - 20, y, 53, 20, {
       collisionFilter: { group },
-      chamfer: 5,
       density: 0.005,
       frictionAir: 0.05,
       render: {
@@ -107,10 +110,15 @@ class PhysicsEngine extends PureComponent {
       },
     });
 
-    const stack = Composites.stack(250, 50, 6, 3, 0, 0, (x, y) => Bodies.rectangle(x, y, 50, 50, {
+    const stack = Composites.pyramid(100, 750, 5, 5, 0, 0, (x, y) => Bodies.circle(x, y, 60, {
       render: {
         fillStyle: '#FFFFFF',
         lineWidth: 0,
+        sprite: {
+          texture: avatar,
+          xScale: 0.15,
+          yScale: 0.15,
+        },
       },
     }));
 
@@ -118,21 +126,26 @@ class PhysicsEngine extends PureComponent {
       bridge,
       stack,
       // left pillar
-      Bodies.rectangle(30, 490, 200, 200, {
+      Bodies.rectangle(30, 490 + 1000, 200, 200, {
         isStatic: true,
         render: {
-          fillStyle: '#333333',
+          fillStyle: '#FFFFFF',
+          // sprite: {
+          //   texture: avatar,
+          //   xScale: 0.5,
+          //   yScale: 0.5,
+          // },
         },
       }),
       // right pillar
-      Bodies.rectangle(770, 490, 200, 200, {
+      Bodies.rectangle(770, 490 + 1000, 200, 200, {
         isStatic: true,
         render: {
-          fillStyle: '#333333',
+          fillStyle: '#FFFFFF',
         },
       }),
       Constraint.create({
-        pointA: { x: 140, y: 420 },
+        pointA: { x: 140, y: 1420 },
         bodyB: bridge.bodies[0],
         pointB: { x: -25, y: 0 },
         length: 2,
@@ -142,7 +155,7 @@ class PhysicsEngine extends PureComponent {
         },
       }),
       Constraint.create({
-        pointA: { x: 660, y: 420 },
+        pointA: { x: 660, y: 1420 },
         bodyB: bridge.bodies[bridge.bodies.length - 1],
         pointB: { x: 25, y: 0 },
         length: 2,
@@ -155,6 +168,10 @@ class PhysicsEngine extends PureComponent {
 
     // add mouse control
     const mouse = Mouse.create(render.canvas);
+
+    mouse.element.removeEventListener('mousewheel', mouse.mousewheel);
+    mouse.element.removeEventListener('DOMMouseScroll', mouse.mousewheel);
+
     const mouseConstraint = MouseConstraint.create(engine, {
       mouse,
       constraint: {
@@ -173,7 +190,7 @@ class PhysicsEngine extends PureComponent {
     // fit the render viewport to the scene
     Render.lookAt(render, {
       min: { x: 0, y: 100 },
-      max: { x: 800, y: 900 },
+      max: { x: 800, y: 1900 },
     });
 
     Render.setPixelRatio(render, 'auto');
@@ -182,7 +199,7 @@ class PhysicsEngine extends PureComponent {
   render() {
     return (
       <div id="simulation-container" ref={this.container}>
-        <div ref={this.myCanvas} />
+        <div id="simulation" ref={this.myCanvas} />
       </div>
     );
   }
