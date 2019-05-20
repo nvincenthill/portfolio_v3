@@ -29,7 +29,7 @@ class Home extends React.Component {
             </header>
           </section>
         </div>
-        <PhysicsEngine />
+        {/* <PhysicsEngine /> */}
       </Layout>
     );
   }
