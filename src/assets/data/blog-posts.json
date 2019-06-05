@@ -1,6 +1,11 @@
 [
   {
-    "title": "How to build and deploy a beautiful PWA with AWS S3, Route53, and CloudFront ",
+    "title": "How I built my own MailChimp app with AWS SES and MJML",
+    "description": "Have you every had to send repetitive emails in a job that you wished you could just automate?",
+    "url": "https://hackernoon.com/how-i-built-my-own-mailchimp-app-with-aws-ses-and-mjml-%EF%B8%8F-5e180432cc33"
+  },
+  {
+    "title": "How to build and deploy a beautiful PWA with AWS S3, Route53, and CloudFront",
     "description": "This is a step-by-step guide to creating a responsive static billboard/portfolio site, deploying it to the web with AWS, and serving it securely with HTTPS",
     "url": "https://hackernoon.com/how-to-build-and-deploy-a-beautiful-personal-portfolio-site-with-aws-s3-route53-and-cloudfront-af125ccbb1c2"
   },
