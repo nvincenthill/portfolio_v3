@@ -12,5 +12,6 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     'no-console': 'off',
     'react/jsx-filename-extension': false,
+    'linebreak-style': ['error', 'windows'],
   },
 };
