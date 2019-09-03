@@ -25,11 +25,14 @@ class Home extends React.Component {
           <section id="one">
             <header className="major">
               <h1>Hi, I&#39;m Nick Vincent-Hill</h1>
-              <h3>I&#39;m a software engineering instructor @ Hack Reactor at Galvanize</h3>
+              <h3>
+                I&#39;m a software engineer and Brazilian jiu jitsu enthusiast
+                in beautiful Oakland, CA
+              </h3>
             </header>
           </section>
         </div>
-        {/* <PhysicsEngine /> */}
+        <PhysicsEngine />
       </Layout>
     );
   }
