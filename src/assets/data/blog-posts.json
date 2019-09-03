@@ -2,21 +2,16 @@
   {
     "title": "How I built my own MailChimp app with AWS SES and MJML",
     "description": "Have you ever had to send repetitive emails in a job that you wished you could just automate?",
-    "url": "https://hackernoon.com/how-i-built-my-own-mailchimp-app-with-aws-ses-and-mjml-%EF%B8%8F-5e180432cc33"
+    "url": "https://medium.com/hackernoon/how-i-built-my-own-mailchimp-app-with-aws-ses-and-mjml-%EF%B8%8F-5e180432cc33"
   },
   {
     "title": "How to build and deploy a beautiful PWA with AWS S3, Route53, and CloudFront",
     "description": "This is a step-by-step guide to creating a responsive static billboard/portfolio site, deploying it to the web with AWS, and serving it securely with HTTPS",
-    "url": "https://hackernoon.com/how-to-build-and-deploy-a-beautiful-personal-portfolio-site-with-aws-s3-route53-and-cloudfront-af125ccbb1c2"
+    "url": "https://www.freecodecamp.org/news/how-to-build-and-deploy-a-beautiful-personal-portfolio-site-with-aws-s3-route53-and-cloudfront-8827975129ef/"
   },
   {
     "title": "Scrabblr — A React game with react-dnd and react-flip-move",
     "description": "A high level overview of my implementation of a puzzle/word game built entirely in React",
     "url": "https://hackernoon.com/scrabblr-a-react-game-with-react-dnd-and-react-flip-move-40cfaac786e2"
-  },
-  {
-    "title": "Introduction and a little about accessing IEX’s API with JavaScript",
-    "description": "A brief description of how to use the IEX financial data API",
-    "url": "https://medium.com/coding-overload/introduction-and-a-little-about-accessing-iexs-api-with-javascript-7ae4e8af79d6"
   }
 ]
