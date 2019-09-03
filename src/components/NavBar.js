@@ -9,13 +9,17 @@ class NavBar extends React.Component {
           <h1 className={window.location.pathname === '/about/' ? 'bold' : ''}>
             <Link to="/about/">About</Link>
           </h1>
-          <h1 className={window.location.pathname === '/portfolio/' ? 'bold' : ''}>
+          {/* <h1 className={window.location.pathname === '/portfolio/' ? 'bold' : ''}>
             <Link to="/portfolio/">Portfolio</Link>
-          </h1>
-          <h1 className={window.location.pathname === '/articles/' ? 'bold' : ''}>
+          </h1> */}
+          <h1
+            className={window.location.pathname === '/articles/' ? 'bold' : ''}
+          >
             <Link to="/articles/">Articles</Link>
           </h1>
-          <h1 className={window.location.pathname === '/contact/' ? 'bold' : ''}>
+          <h1
+            className={window.location.pathname === '/contact/' ? 'bold' : ''}
+          >
             <Link to="/contact/">Contact me</Link>
           </h1>
         </div>
